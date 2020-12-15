@@ -1,55 +1,95 @@
-<div style="float: left; background-color: rgb(0, 247, 255); width: 15%; height: 200px;" >
+<div style="float: left; background-color: rgb(0, 247, 255); width: 15%; height: 200px;" class="p-2">
+<div class="">
+<img src="/images/admin-logo.png" style="height: auto; width: 150px;">
+<span style="font-weight:bolder ;">Rahoof Nazer</span>
+<span style="font-weight:lighter ;">rahoofnazer@gmail.com</span>
+</div>
 </div>
 
-<div style="float: left; background-color: rgb(255, 255, 255); width: 85%; height: 200px;" >
+<div style="float: left; background-color: rgb(255, 0, 0); width: 85%; height: 200px;" >
+
+<div id="" class="tabcontent" >
 <button type="button" class="btn btn-primary ml-5 " style="margin-left: 2rem;">
   ADMIN DASHBOARD <span class="badge badge-light">WELCOME!</span>
 </button>
 </div>
-<hr style="color: blue;">
-<div style="float: left; background-color: rgb(15, 0, 43); width: 15%; height: 320px;" >
+
 </div>
 
-<div class="row" style="float: left; background-color: rgb(255, 255, 255); width: 85%; height: 320px; border:rgb(56, 56, 56); border-style: solid;" >
+
+<div style="float: left; background-color: rgb(15, 0, 43); width: 15%; height: 320px;" >
+
+<div class="row tab">
+  <button  class="tablinks btn btn-info my-1" onclick="openCity(event, 'dashboard')" id="defaultOpen">Dashboard</button>
+  <button class="tablinks btn btn-info my-1" onclick="openCity(event, 'doctors')">Doctors</button>
+  <button class="tablinks btn btn-info my-1" onclick="openCity(event, 'patients')">Patients</button>
+    <button class="tablinks btn btn-info my-1" onclick="openCity(event, 'appoinments')">Appoinments</button>
+
+</div>
+</div>
+
+<div id="dashboard" class="row tabcontent" style="float: left; background-color: rgb(22, 0, 0); width: 85%; height: 600px; z-index: 1;" >
 
 
-<div class="col-lg-6">
+<div class="col-lg-4 my-1">
   <div class="w3-card-4 w3-dark-grey" style="width:100%; float: left;" >
-
+    <a href="/admin/doctor">
     <div class="w3-container w3-left">
-      <img src="/images/admin-logo.png" alt="Avatar" style="height: 100px; width: auto;">
+      <img src="/images/doctor.png" alt="Avatar" style="height: 30px; width: auto; border-radius: 25px">
       <h5>Doctors</h5>
     </div>
+    <div class="w3-container w3-right" style="font-size: 4rem;">
 
+      20
+    </div>
+    </a>
   </div>
 </div>
 
 
-<div class="col-lg-6">
+<div class="col-lg-4 my-1">
   <div class="w3-card-4 w3-dark-grey" style="width:100%; float: left;">
 
+<a href="/images/patient">
     <div class="w3-container w3-left">
-      <img src="/images/admin-logo.png" alt="Avatar" style="height: 100px; width: auto;">
+      <img src="/images/patient.png" alt="Avatar" style="height: 30px; width: auto; border-radius: 25px">
       <h5>Patients</h5>
     </div>
+     <div class="w3-container w3-right" style="font-size: 4rem;">
 
+      18
+    </div>
+</a>
   </div>
 </div>
 
-<div class="col-lg-6">
-  <div class="w3-card-4 w3-dark-grey" style="width:100%; float: left;">
 
+<div class="col-lg-4 my-1">
+  <div class="w3-card-4 w3-dark-grey" style="width:100%; float: left;">
+<a href="/admin/appoinment">
     <div class="w3-container w3-left">
-      <img src="/images/admin-logo.png" alt="Avatar" style="height: 100px; width: auto;">
+      <img src="/images/apoinment.png" alt="Avatar" style="height: 30px; width: auto; border-radius: 25px;">
       <h5>Appoinments</h5>
     </div>
+     <div class="w3-container w3-right" style="font-size: 4rem;">
 
+      8
+    </div>
+</a>
   </div>
 </div>
-
-
-
 </div>
 
+<div id="doctors" class="tabcontent">
+doctors tab
+</div>
+
+<div id="patients" class="tabcontent">
+patients tab
+</div>
+
+<div id="appoinments" class="tabcontent">
+  appoinments tab
+</div>
 
 
