@@ -8,6 +8,7 @@ var adminRouter = require('./routes/admin');
 var usersRouter = require('./routes/users');
 var hbs=require('express-handlebars')
 var app = express();
+var db=require('./config/connection')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +25,12 @@ app.set('view engine', 'hbs');
 app.engine('hbs',hbs({extname:'hbs',defaultLayout:'layout',layoutsDir:__dirname+'/views/layout/',partialsDir:__dirname+'/views/partials/'}))
 
 
+db.connect((err)=>{
+  if(err)
+  console.log("Connection Error"+err)
+  else console.log("Database conneted successfully")
+
+})
 
 app.use('/admin', adminRouter);
 app.use('/', usersRouter);
