@@ -5,6 +5,8 @@ const { response } = require('express')
 const { reject, promise } = require('bcrypt/promises')
 var objectId=require('mongodb').ObjectId
 const { resolve } = require('path')
+const session = require('express-session');
+
 
 module.exports={
     doSignup: (adminData) =>{
@@ -24,7 +26,7 @@ module.exports={
             let response={}
     
     
-            let admin= await db.get().collection(collection.ADMIN_COLLECTION).findOne({Email:adminData.Email})
+            let admin= await db.get().collection(collection.ADMIN_COLLECTION).findOne({Username:adminData.Username})
             if(admin){
                 bcrypt.compare(adminData.Password,admin.Password).then((status)=>{
                     if(status){
@@ -39,7 +41,7 @@ module.exports={
                 })
     
             }else{
-                console.log('admin email not found, login failed    ');
+                console.log('admin username not found, login failed    ');
                 resolve({status:false})
             }
         })
