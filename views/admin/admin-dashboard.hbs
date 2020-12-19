@@ -89,7 +89,7 @@
         </div>
       </div>
 
-{{!-- ------------------------------------doctors tab------------------------------------------------ --}}
+      {{!-- ------------------------------------doctors tab------------------------------------------------ --}}
 
 
       <div id="doctors" class="tabcontent">
@@ -99,7 +99,8 @@
           <h3 style="font-weight: bolder;">List of Doctors</h3>
         </div>
 
-        <a href="/add"><button class="btn btn-primary px-5 my-2 mt-2 mb-5">Add Doctors</button></a>
+        <button class="tablinksbtn btn-primary px-5 my-2 mt-2 mb-5" style="border-radius: 20px;"
+          onclick="openCity(event, 'add_doctor')">Add Doctor</button>
 
         <div id="" class="bg-secondary">
           <table id="my_table_d" class="display table table-striped table-bordered" style="width:100%">
@@ -114,14 +115,16 @@
             </thead>
             <tbody>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Dr Rajesh</span>
-                  
-                  </td>
+
+                </td>
                 <td>(BDS)</td>
-                <td><p class="text-primary">Orthodentist</p></td>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -133,21 +136,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Dr Bibeesh</span>
-                  
-                  </td>
+
+                </td>
                 <td>(BDS)</td>
-                <td><p class="text-primary">Orthodentist</p></td>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -159,21 +164,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d3.png" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d3.png" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Dr Ananth Ram P</span>
-                  
-                  </td>
+
+                </td>
                 <td>(BDS)</td>
-                <td><p class="text-primary">Orthodentist</p></td>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -185,21 +192,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Dr Ashiq</span>
-                  
-                  </td>
+
+                </td>
                 <td>(BDS)</td>
-                <td><p class="text-primary">Orthodentist</p></td>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -211,23 +220,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
-              
+
             </tbody>
           </table>
         </div>
       </div>
 
-{{!-- ------------------------------------doctors tab------------------------------------------------ --}}
-{{!-- ------------------------------------patients tab------------------------------------------------ --}}
+      {{!-- ------------------------------------doctors tab------------------------------------------------ --}}
+      {{!-- ------------------------------------patients tab------------------------------------------------ --}}
 
 
-<div id="patients" class="tabcontent">
+      <div id="patients" class="tabcontent">
 
 
         <div class="">
@@ -245,19 +254,21 @@
                 <th>Mobile </th>
                 <th>Account Status</th>
                 <th>Actions</th>
-                
+
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 50px; border-radius: 25px;" > 
-                  <span style="font-weight: bold;">Aleena Ashiq</span>
-                  
-                  </td>
+                <td>
+
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 50px; border-radius: 25px;">
+                  <span style="font-weight: bold;">Rajesh</span>
+
+                </td>
                 <td>19</td>
-                <td><p class="text-primary">9856325632</p></td>
+                <td>
+                  <p class="text-primary">9856325632</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -269,21 +280,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Umair Kallingal</span>
-                  
-                  </td>
+
+                </td>
                 <td>34</td>
-                <td><p class="text-primary">9565278452</p></td>
+                <td>
+                  <p class="text-primary">9565278452</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -295,21 +308,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d3.png" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d3.png" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">Nandana Ram</span>
-                  
-                  </td>
+
+                </td>
                 <td>65</td>
-                <td><p class="text-primary">8545214563</p></td>
+                <td>
+                  <p class="text-primary">8545214563</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -321,21 +336,23 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
+                <td>
+
+                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;">
                   <span style="font-weight: bold;">John Xavier</span>
-                  
-                  </td>
+
+                </td>
                 <td>25</td>
-                <td><p class="text-primary">7563654896</p></td>
+                <td>
+                  <p class="text-primary">7563654896</p>
+                </td>
                 <td>
 
                   <div style="height: auto; width:auto;" class="px-5">
@@ -347,157 +364,222 @@
                   </div>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <button class="btn btn-primary"><i class="far fa-trash-alt"></i></button>
+                  <button class="btn btn-primary"><i class="fas fa-backspace"></i></button>
                 </td>
 
               </tr>
-{{!-- ------------------------------------patients tab------------------------------------------------ --}}
-{{!-- ------------------------------------appoinmnts tab------------------------------------------------ --}}
-<div id="appoinments" class="tabcontent">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {{!-- ------------------------------------patients tab------------------------------------------------ --}}
+
+
+
+
+      {{!-- ------------------------------------appoinmnts tab------------------------------------------------ --}}
+
+      <div id="appoinments" class="tabcontent">
 
 
         <div class="">
-          <h3 style="font-weight: bolder;">List of Appoinmetns</h3>
+          <h3 style="font-weight: bolder;">List of Appoinments</h3>
         </div>
 
         <a href="/add"><button class="btn btn-primary px-5 my-2 mt-2 mb-5">Add Appoinment</button></a>
 
         <div id="" class="bg-secondary">
-          <table id="my_table_p" class="display table table-striped table-bordered" style="width:100%">
+          <table id="my_table_a" class="display table table-striped table-bordered" style="width:100%">
             <thead>
               <tr>
-                <th>Patient Name</th>
-                <th>Age</th>
-                <th>Mobile </th>
-                <th>Account Status</th>
-                <th>Actions</th>
-                
+                <th>Doctor Name</th>
+                <th>Speciality</th>
+                <th> Date </th>
+                <th>Session</th>
+                <th>Time</th>
+                <th>Booking For</th>
+                <th>Apmnt. Ref Id</th>
+
+
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 50px; border-radius: 25px;" > 
-                  <span style="font-weight: bold;">Aleena Ashiq</span>
-                  
-                  </td>
-                <td>19</td>
-                <td><p class="text-primary">9856325632</p></td>
                 <td>
 
-                  <div style="height: auto; width:auto;" class="px-5">
-                    <label class="switch" style="">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                    </label>
-
-                  </div>
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 35px; border-radius: 25px;">
+                  <span style="font-weight: bold;">Dr Bibeesh </span>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
                 </td>
+                <td>
+                  <p class="">12-2-20</p>
+                </td>
+
+                <td>
+                  <p class="">Evening</p>
+                </td>
+
+                <td>
+                  <p class="">04:15 - 04:30</p>
+                </td>
+
+                <td>
+                  <p class="">Nandana Ram</p>
+                </td>
+
+                <td>
+                  <p class="">1001</p>
+                </td>
+
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
-                  <span style="font-weight: bold;">Umair Kallingal</span>
-                  
-                  </td>
-                <td>34</td>
-                <td><p class="text-primary">9565278452</p></td>
                 <td>
 
-                  <div style="height: auto; width:auto;" class="px-5">
-                    <label class="switch" style="">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                    </label>
-
-                  </div>
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 35px; border-radius: 25px;">
+                  <span style="font-weight: bold;">Dr Shibu</span>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
                 </td>
+                <td>
+                  <p class="">12-2-20</p>
+                </td>
+
+                <td>
+                  <p class="">Evening</p>
+                </td>
+
+                <td>
+                  <p class="">04:15 - 04:30</p>
+                </td>
+
+                <td>
+                  <p class="">Nandana Ram</p>
+                </td>
+
+                <td>
+                  <p class="">1001</p>
+                </td>
+
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d3.png" style="height: auto; width: 50px; border-radius: 25px;" > 
-                  <span style="font-weight: bold;">Nandana Ram</span>
-                  
-                  </td>
-                <td>65</td>
-                <td><p class="text-primary">8545214563</p></td>
                 <td>
 
-                  <div style="height: auto; width:auto;" class="px-5">
-                    <label class="switch" style="">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                    </label>
-
-                  </div>
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 35px; border-radius: 25px;">
+                  <span style="font-weight: bold;">Dr Ashiq</span>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
                 </td>
+                <td>
+                  <p class="">12-2-20</p>
+                </td>
+
+                <td>
+                  <p class="">Evening</p>
+                </td>
+
+                <td>
+                  <p class="">04:15 - 04:30</p>
+                </td>
+
+                <td>
+                  <p class="">Nandana Ram</p>
+                </td>
+
+                <td>
+                  <p class="">1001</p>
+                </td>
+
 
               </tr>
               <tr>
-                <td> 
-                 
-                  <img src="/images/doctors/d2.jpeg" style="height: auto; width: 50px; border-radius: 25px;" > 
-                  <span style="font-weight: bold;">John Xavier</span>
-                  
-                  </td>
-                <td>25</td>
-                <td><p class="text-primary">7563654896</p></td>
                 <td>
 
-                  <div style="height: auto; width:auto;" class="px-5">
-                    <label class="switch" style="">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                    </label>
-
-                  </div>
+                  <img src="/images/doctors/d1.jpg" style="height: auto; width: 35px; border-radius: 25px;">
+                  <span style="font-weight: bold;">Dr Ananth Ram</span>
 
                 </td>
-                <td>        
-                  <button class="btn btn-primary" ><i class="far fa-trash-alt"></i></button>
-                   <button class="btn btn-primary" ><i class="fas fa-backspace"></i></button>
+                <td>
+                  <p class="text-primary">Orthodentist</p>
                 </td>
+                <td>
+                  <p class="">12-2-20</p>
+                </td>
+
+                <td>
+                  <p class="">Evening</p>
+                </td>
+
+                <td>
+                  <p class="">04:15 - 04:30</p>
+                </td>
+
+                <td>
+                  <p class="">Nandana Ram</p>
+                </td>
+
+                <td>
+                  <p class="">1001</p>
+                </td>
+
 
               </tr>
-
-
-
-{{!-- -------------------------------end--------------------------------- --}}
             </tbody>
           </table>
         </div>
       </div>
 
+      {{!-- ------------------------------------appoinmnts tab------------------------------------------------ --}}
+      {{!-- ------------------------------------add dooctor tab------------------------------------------------ --}}
 
-      <div id="" class="tabcontent">
-        patients tab
-      </div>
-      <div id="" class="tabcontent">
-        appoinments tab
-      </div>
+      <div id="add_doctor" class="tabcontent">
+        <div class="">
+          <h3 style="font-weight: bolder;">Add Doctor</h3>
+        </div>
 
+        <div class="container" enctype="multipart/form-data">
+          <form>
+            <div class="form-row container">
+              <div class="col-lg-12 my-3">
+                <input type="text" class="form-control"  placeholder="Enter Doctor's Name">
+              </div>
+
+              <div class="row">
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Specialized">
+              </div>
+
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Speciality">
+              </div>
+
+              <div class="col-lg-6 my-3">
+                <input type="text" class="form-control" placeholder="Enter Password For Doctor">
+              </div>
+
+              <div class="col-lg-6 my-3">
+              <input name="image" type="file"  class="form-control">
+              <p class="text-white" style="font-weight: lighter;">Upload Doctor's Profile Picture Here</p>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Register Doctor</button>
+              </div>
+              
+            </div>
+          </form>
+        </div>
+
+      </div>
 
     </div>
   </div>
@@ -507,13 +589,15 @@
       $('#my_table_d').DataTable();
     });
 
-     $(document).ready(function () {
+    $(document).ready(function () {
       $('#my_table_p').DataTable();
     });
 
-     $(document).ready(function () {
+    $(document).ready(function () {
       $('#my_table_a').DataTable();
     });
 
-    
+
+
+
   </script>
