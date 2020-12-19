@@ -3,6 +3,7 @@ const { response } = require('../app');
 var admin_helper = require('../helpers/admin-helper');
 var router = express.Router();
 const session = require('express-session');
+const { route } = require('./users');
 
 const verifyAdmin=(req,res,next)=>{
   console.log("Verify admin called")
@@ -46,6 +47,11 @@ router.post('/login',(req,res)=>{
       res.redirect('/admin')
     }    
   })
+})
+
+router.post('/add-doctor',(req,res)=>{
+  console.log('line 53++++++++++',req.body)
+
 })
 
 router.get('/logout',verifyAdmin,(req,res)=>{
